@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/abdiwahid_logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="expertiseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Expertise</a>
+                    <div class="dropdown-menu" aria-labelledby="expertiseDropdown">
+                        <a class="dropdown-item" href="expertise.html">Our Expertise</a>
+                        <a class="dropdown-item" href="service1.html">Service 1</a>
+                        <a class="dropdown-item" href="service2.html">Service 2</a>
+                        <a class="dropdown-item" href="service3.html">Service 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="careers.html">Careers <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 80px;">
+        <h1>Careers</h1>
+        <p>Explore our current job and internship openings below. Click on the links to view more details in a PDF document.</p>
+
+        <div class="job-opening">
+            <h3>Software Engineer</h3>
+            <p>Join our team as a Software Engineer. You will be responsible for developing and maintaining software applications. <a href="documents/software_engineer_details.pdf" target="_blank">View Details</a></p>
+        </div>
+
+        <div class="job-opening">
+            <h3>Marketing Intern</h3>
+            <p>We are looking for a Marketing Intern to support our marketing efforts. This is a great opportunity to gain hands-on experience. <a href="documents/marketing_intern_details.pdf" target="_blank">View Details</a></p>
+        </div>
+
+        <!-- Add more job openings here -->
+
+    </div>
+
+    <footer class="footer bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p>Email: <a href="mailto:info@abdiwahidassociates.com" class="text-light">info@abdiwahidassociates.com</a></p>
+                    <p>Phone: +254 702 707753 | +254 731 707753</p>
+                    <p>Address: Shyam House,Nyerere Avenue, Mombasa, Kenya.</p>
+                    <p>Postal Address: 80333-80100, Mombasa, Kenya.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="expertise.html" class="text-light">Expertise</a></li>
+                        <li><a href="publications.html" class="text-light">Publications</a></li>
+                        <li><a href="contact.html" class="text-light">Contact Us</a></li>
+                        <li><a href="careers.html" class="text-light">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Find Us</h5>
+                    <div id="map" style="height: 150px; background-color: #f0f0f0;"></div>
+                    <p>Connect with us on social media:</p>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mt-3 mb-0">&copy; 2024 Abdiwahid & Associates. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

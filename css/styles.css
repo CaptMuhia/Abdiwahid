@@ -1,0 +1,376 @@
+body {
+    background-color: #1C191A;
+    color: #F6E7D8;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('../images/background1.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-content {
+    width: 50%; /* Ensure it only spans half the screen */
+    margin-left: 50px; /* Adjust margin as needed */
+    color: #F6E7D8;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-title {
+    font-size: 64px;
+    font-family: 'The Seasons', serif;
+    color: #F6E7D8;
+}
+
+.hero-description {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.hero-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #343a40;
+    color: #F6E7D8;
+    border: none;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #495057;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #1C191A !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #F6E7D8;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+
+.about-us {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #2A2928;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us-logo {
+    max-width: 150px; /* Adjust size as needed */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-us-title {
+    font-size: 32px;
+    font-family: 'The Seasons', serif;
+    color: #F6E7D8;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.about-us-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #F6E7D8;
+    text-align: justify; /* Ensures the text is justified */
+    overflow-wrap: break-word; /* Ensures long words are broken to fit the container */
+    white-space: normal; /* Ensures text wraps normally within the paragraph */
+    opacity: 0; /* For scroll animation */
+    transform: translateY(20px); /* For scroll animation */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for both opacity and transform */
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px); /* Initial offset for smooth transition */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for both opacity and transform */
+}
+
+/* Show when in view */
+.scroll-animation.animate {
+    opacity: 1;
+    transform: translateY(0); /* Reset the transform property to bring the element to its original position */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Footer*/
+.footer {
+    background-color: #1C191A;
+    color: #F6E7D8;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.dropdown-menu {
+    background-color: #1C191A;
+    color: #F6E7D8;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #F6E7D8;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    color: #fff;
+    background-color: #343a40;
+}
+
+.job-opening {
+    margin-bottom: 20px;
+    border: 1px solid #F6E7D8;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #2A2928;
+}
+
+.job-opening h3 {
+    color: #F6E7D8;
+}
+
+.job-opening p {
+    color: #F6E7D8;
+}
+
+.job-opening a {
+    color: #F6E7D8;
+    text-decoration: underline;
+}
+
+.job-opening a:hover,
+.job-opening a:focus {
+    color: #fff;
+}
+
+.footer {
+    background-color: #1C191A;
+    color: #F6E7D8;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container {
+    padding: 20px;
+}
+
+.footer h5 {
+    color: #F6E7D8;
+}
+
+.footer a {
+    color: #F6E7D8;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    background-color: #1C191A;
+    color: #F6E7D8;
+}
+.btn-learn-more {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #343a40;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Ensure the button is above the ::before element */
+}
+
+.btn-learn-more:hover {
+    background-color: #9f763c;
+}
+
+.btn-learn-more::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: height 0.5s ease-out; /* Adjust the duration as needed */
+    z-index: -1;
+}
+
+.btn-learn-more:hover::before {
+    height: 100%;
+}
+
+/*why choose us*/
+.section-header {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.choose-box {
+    background-color: #2A2928;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content */
+}
+
+.choose-box:hover {
+    background-color: #9f763c; 
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.choose-box-content {
+    display: none;
+    padding-top: 20px;
+    background-color: #32312f;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.choose-box.active .choose-box-content {
+    display: block;
+    opacity: 1;
+}
+
+.choose-box-header h3 {
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+/*Practice areas*/
+.practice-areas {
+    padding: 80px 0;
+    background-color: #9f763c;
+}
+
+.section-header {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.practice-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-item:hover .carousel-overlay {
+    opacity: 1;
+}
+
+.carousel-overlay p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel-overlay a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-overlay a:hover {
+    background-color: #0056b3;
+}
