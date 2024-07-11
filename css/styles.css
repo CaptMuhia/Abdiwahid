@@ -374,3 +374,78 @@ body {
 .carousel-overlay a:hover {
     background-color: #0056b3;
 }
+
+/*Who we are*/
+body {
+    background-color: #1C191A;
+    color: #F6E7D8;
+}
+
+.container {
+    padding: 20px;
+    background-color: #2A2928;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#who-we-are h1, #our-team h1 {
+    font-size: 32px;
+    font-family: 'The Seasons', serif;
+    color: #F6E7D8;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-member-image {
+    position: relative;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-member-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-member-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #F6E7D8;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.team-member-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.team-member-description {
+    font-size: 16px;
+    color: #F6E7D8;
+    text-align: justify;
+}
+
+.team-member:hover .team-member-image {
+    transform: scale(1.05);
+}
+/*Who we are*/
+
