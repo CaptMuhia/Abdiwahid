@@ -25,7 +25,7 @@ function initMap() {
 
 document.addEventListener("DOMContentLoaded", function() {
     // Typing animation for hero description
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.";
+    const text = "Discover a dedicated team of legal experts committed to delivering innovative and effective solutions tailored to your unique needs. We are your partners in achieving your goals. Let's build a strong legal foundation together.";
     const descriptionElement = document.querySelector(".hero-description");
     let index = 0;
 
